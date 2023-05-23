@@ -1,0 +1,94 @@
+<html>
+<head>
+<style>
+input[type=text], input[type=password] {
+  width: 300%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+td{
+padding-left:30px;}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 300%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.logbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.logbtn, .signupbtn {
+  float: left;
+  width: 300%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 25%;
+  }
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+  <div class="logo mb-4">
+    <img src="images/logo.png" alt="" class="img-fluid" style="height:100px;width:100px">
+  </div>
+</td>
+<td colspan="2">
+<form name="search">
+<input type="text" placeholder="search courses" size=50px>
+</form>
+</td>
+</tr>
+</table>
+<table width=600px height=600px>
+<center>
+<tr>
+<td width=300px>
+<i style="color:blue;font-size:50px;">Start your career with WE-SES</i>
+</td>
+<td height=300px>
+<form>
+<label><b>Email:</b></label>
+<input type="text" placeholder="Email"><br><br>
+<label><b>Password:</b></label>
+<input type=password placeholder="Password"><br><br>
+<div class="clearfix">
+<button class="logbtn" type="button">Login</button>
+<br>Register?
+<button class="signupbtn" type="button" onclick="window.location.href='signup.html'">SignUp</button>
+</div>
+</form>
+</td>
+</tr>
+</center>
+</table>
+</body>
+</html>
+
